@@ -1,0 +1,169 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="Web Muhammad Naufal Abdulmajid">
+    <meta name="keywords" content="HTML, Naufal, Tugas">
+    <meta name="author" content="Muhammad Naufal Abdulmajid">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Recommended Foods</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined{
+            scale: 1.5;
+            color: white;
+        }
+        body{
+            margin: 0;
+            background-color: beige;
+        }
+        nav {
+            position: fixed;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            background-color: darkblue ;
+            padding: 10px;
+            border-bottom: 5px rgb(127, 217, 255) solid;
+            color: white;
+        }
+        nav > div{
+            display: flex;
+        }
+        #nav1{
+            flex-direction: column;
+            align-items: center;
+        }
+        #nav1 > * {padding: 0;}
+        #nav2{
+            align-items: center;
+            padding-right: 10px;
+        }
+        #nav2 > * {
+            align-items: center;
+            padding-right: 20px;
+        }
+        #profileNav{
+            display: flex;
+            align-items: center;
+            text-decoration:none;
+            color: white;
+        }
+
+    
+        #title{
+            align-self: center;
+            margin: 0 0 10px 0;
+        
+        }        
+        article{
+            padding-top: 90px;
+            display: flex;
+            flex-direction: column;
+        }
+        article > div {
+            display: flex;
+            justify-content: space-between;
+            margin:0 30px;
+            padding: 30px;
+            background-color: rgb(255, 255, 237);
+        }
+        article > div > div{
+            background-color: white;
+            width: 330px;
+            height: 150px;
+            border: 2px lightgrey solid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+        .imgplaceholder{
+            color: gray;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .placeholder{
+            color: gray;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min-content;
+        }
+
+
+    </style>
+    </head> 
+    <body>
+        <nav>
+            <div id="nav1">
+                <b style="font-size: 30px;">UDINUS</b>
+                <b>Foods</b>
+            </div>        
+            <div id="nav2">
+                <a href="" id="profileNav">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p>Username</p>
+                </a>
+            </div>
+        </nav>
+    
+        <article>
+            <h2 id="title">Our Recommendations</h2>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined imgplaceholder">
+                        fastfood
+                    </span>
+                    <p class="placeholder">placeholder</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined imgplaceholder">
+                        fastfood
+                    </span>
+                    <p class="placeholder">placeholder</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined imgplaceholder">
+                        fastfood
+                    </span>
+                    <p class="placeholder">placeholder</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <span class="material-symbols-outlined imgplaceholder">
+                        fastfood
+                    </span> 
+                    <p class="placeholder">placeholder</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined imgplaceholder">
+                        fastfood
+                    </span>  
+                    <p class="placeholder">placeholder</p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined imgplaceholder">
+                        fastfood
+                    </span> 
+                    <p class="placeholder">placeholder</p>
+                </div>
+            </div>
+        </article>
+
+        <footer> 
+            <p>Copyright <a href="../About/about.html">&copy;</a> 2022 Muhammad Naufal Abdulmajid.</p> 
+        </footer> 
+    </body> 
+    </html>
