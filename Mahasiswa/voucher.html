@@ -59,6 +59,101 @@
             transform: translate(-50%, 0%);
         }
 
+        h1{
+            margin: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .searchbar{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin:0 30px;
+            padding-top: 20px;
+            background-color: rgb(255, 255, 237);
+        }
+
+        article{
+            padding-top: 90px;
+            display: flex;
+            flex-direction: column;
+        }
+        .hasil {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin:0 30px;
+            padding: 20px;
+            background-color: rgb(255, 255, 237);
+        }
+        .imgcontainer{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            width: 200px;
+            height: 140px;
+            border: 2px lightgrey solid;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .imgplaceholder{
+            color: gray;
+        }
+        .placeholder{
+            color: gray;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min-content;
+        }
+
+        .items{
+            display: flex;
+            justify-content: center;
+        }
+        .desc{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            left: -2px;
+            background-color: white;
+            width: 63vw;
+            height: 140px;
+            border: 2px lightgrey solid;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .desc > * {
+            margin: 0;
+        }
+
+        .redeem {
+            display: block;
+            width: 100px;
+            height: 34px;
+            padding: 6px 12px;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.4;
+            color: white;
+            background-color: darkblue;
+            border-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .use{
+            line-height: 1.4;
+            color: white;
+            background-color: darkblue;
+            border-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
 
     </style>
     </head> 
@@ -79,11 +174,44 @@
         </nav>
     
         <article>
-          
+            <h1>Manage Vouchers</h1>
+            <div class="searchbar">
+                <input type="search" id="search" name="search" placeholder="  Redeem Code" style="width: 80vw; height: 30px;">
+                <button class="redeem">Redeem</button>
+            </div>
+            <div class="hasil">
+                <div class="items">
+                    <div class="imgcontainer">
+                        <span class="material-symbols-outlined imgplaceholder">
+                            confirmation_number
+                        </span>
+                        <button class="use">Use Voucher</button>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Voucher description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus necessitatibus incidunt mollitia totam dignissimos assumenda, tenetur inventore recusandae. Laboriosam laudantium numquam ullam temporibus dolore natus inventore cupiditate ea veritatis.</p>
+                    </div>
+                </div>
+                <div class="items" style="position: relative; top: -2px;">
+                    <div class="imgcontainer">
+                        <span class="material-symbols-outlined imgplaceholder">
+                            confirmation_number
+                        </span>
+                        <button class="use">Use Voucher</button>
+                    </div>
+
+                    <div class="desc">
+                        <h3>Voucher description</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptatibus necessitatibus incidunt mollitia totam dignissimos assumenda, tenetur inventore recusandae. Laboriosam laudantium numquam ullam temporibus dolore natus inventore cupiditate ea veritatis.</p>
+                    </div>
+                </div>
+            </div>
+
         </article>
 
         <footer> 
             <p>Copyright <a href="../About/about.html">&copy;</a> 2022 Muhammad Naufal Abdulmajid.</p> 
         </footer> 
-    </body> 
+    </body>  
     </html>

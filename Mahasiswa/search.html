@@ -59,6 +59,80 @@
             transform: translate(-50%, 0%);
         }
 
+        h1{
+            margin: 0px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .searchbar{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin:0 30px;
+            padding-top: 20px;
+            background-color: rgb(255, 255, 237);
+        }
+
+        article{
+            padding-top: 90px;
+            display: flex;
+            flex-direction: column;
+        }
+        .hasil {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin:0 30px;
+            padding: 20px;
+            background-color: rgb(255, 255, 237);
+        }
+        .imgcontainer{
+            background-color: white;
+            width: 200px;
+            height: 140px;
+            border: 2px lightgrey solid;
+            justify-content: center;
+            align-items: center;
+            margin-left: 7.8vw;
+        }
+
+
+        .imgplaceholder{
+            color: gray;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .placeholder{
+            color: gray;
+            position: relative;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: min-content;
+        }
+
+        .items{
+            display: flex;
+        }
+        .desc{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            left: -2px;
+            background-color: white;
+            width: 62.5vw;
+            height: 140px;
+            border: 2px lightgrey solid;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .desc > * {
+            margin: 0;
+        }
+
 
     </style>
     </head> 
@@ -79,7 +153,47 @@
         </nav>
     
         <article>
-          
+            <h1>Search</h1>
+            <div class="searchbar">
+                <span class="material-symbols-outlined" style="color : grey !important; margin-right: 20px; cursor: pointer;">
+                    search
+                </span>
+                <input type="search" id="search" name="search" placeholder="  Search" required style="width: 80vw; height: 30px;">
+            </div>
+            <div class="hasil">
+                <div class="items">
+                    <div class="imgcontainer">
+                        <span class="material-symbols-outlined imgplaceholder">
+                            fastfood
+                        </span>
+                        <p class="placeholder">food img</p>
+                    </div>
+
+                    <div class="desc">
+                        <ul>
+                            <li>Food Name</li>
+                            <li>Price</li>
+                            <li>Location</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items" style="position: relative; top: -2px;">
+                    <div class="imgcontainer">
+                        <span class="material-symbols-outlined imgplaceholder">
+                            pin_drop
+                        </span>
+                        <p class="placeholder">resto img</p>
+                    </div>
+
+                    <div class="desc">
+                        <ul>
+                            <li>Resto Name</li>
+                            <li>Location</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </article>
 
         <footer> 
